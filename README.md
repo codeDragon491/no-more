@@ -10,6 +10,7 @@ To get started, clone the project and install the dependencies:
 ```
 # Using npm
 npm install
+```
 
 After that, start up Webpack:
 
