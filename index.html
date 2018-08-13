@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="h-full">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Powerpoint Services for professionals | no-more</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/styles.css" />
+</head>
+
+<body class="h-full bg-cover-image">
+    <div class="h-screen font-sans antialiased" id="app">
+        <nav class="h-screen-10 flex items-center justify-between flex-wrap bg-transparent p-6">
+            <div class="flex items-center flex-no-shrink ml-6">
+                <a href="#">
+                    <img src="src/assets/logo_nm_inverse.svg" alt="no-more logo" class="w-16 xl:w-24 image-source">
+                </a>
+            </div>
+            <div class="block md:hidden">
+                <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-red-lighter border-white hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div :class="open ? 'block': 'hidden'" class="w-full md:flex md:items-center md:w-auto lg:justify-end z-10 bg-grey-theme md:bg-transparent p-6">
+                <div class="sm:flex sm:flex-grow sm:items-center text-sm">
+                    <a href="#responsive-header" class="no-underline block text-base font-medium sm:inline-block text-white hover:text-red-light mr-4">
+                        Pricing
+                    </a>
+                    <a href="#responsive-header" class="no-underline block text-base font-medium sm:inline-block pt-4 sm:pt-0 text-white hover:text-red-light mr-4">
+                        Resources
+                    </a>
+                    <a href="#responsive-header" class="no-underline block text-base font-medium sm:inline-block pt-4 sm:pt-0 text-white hover:text-red-light mr-4">
+                        Blog
+                    </a>
+                    <a href="#responsive-header" class="no-underline block text-base font-medium sm:inline-block pt-4 sm:pt-0 text-white hover:text-red-light mr-4">
+                        Insights
+                    </a>
+                    <div class="pt-10 sm:pt-0 pb-4 sm:pb:0 sm:items-center">
+                        <a href="#" class="no-underline text-base font-medium sm:inline-block px-8 py-4 leading-none border rounded text-white bg-red-light hover:border-red-light hover:text-red-light hover:bg-transparent">
+                            FREE TRIAL
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="h-screen-90 flex flex-col items-center">
+            <div>
+                <h1 class="text-center text-2xl md:text-4xl lg:text-5xl text-white font-normal">no-more spending hours
+                    <br> on desk research or
+                    <br>Powerpoint visuals</h1>
+                <hr class="w-48 border-t-4 border-red-light">
+                <h3 class="text-center text-base md:text-2xl text-white font-medium">Do what you do. Best</h3>
+            </div>
+            <div class="inline-flex flex-col md:flex-row mt-auto justify-center">
+                <div class="flex-auto text-center mx-6 md:mx-4 my-4 md:my-0 pt-12 md:pt-24 px-8 max-w-xs rounded overflow-hidden shadow-lg bg-purple-darker">
+                    <i class="fas fa-chalkboard text-white text-4xl md:text-6xl"></i>
+                    <div class="py-6 md:py-12">
+                        <div class="text-white font-bold md:text-xl">BUSINESS PRESENTATIONS</div>
+                    </div>
+                </div>
+                <div class="flex-auto text-center mx-6 md:mx-4 my-4 md:my-0 pt-12 md:pt-24 px-14 max-w-sm rounded overflow-hidden shadow-lg bg-teal">
+                    <i class="fas fa-search text-white text-4xl md:text-6xl"></i>
+                    <div class="py-6 md:py-12">
+                        <div class="text-center text-white font-bold md:text-xl">BUSINESS RESEARCH
+                            <br>SERVICES</div>
+                    </div>
+                </div>
+                <div class="flex-auto text-center mx-6 md:mx-4 my-4 md:my-0 pt-12 md:pt-24 px-7 max-w-sm rounded overflow-hidden shadow-lg bg-red-light ">
+                    <i class="fas fa-brush text-white text-4xl md:text-6xl"></i>
+                    <div class="py-6 md:py-12">
+                        <div class="text-center text-white font-bold md:text-xl">UNLIMITED OFF-THE-RACK
+                            <br>DESIGNER SLIDES</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script defer src="fontawesome-5.2.0/js/all.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                open: false,
+            },
+            methods: {
+                toggle() {
+                    this.open = !this.open
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
