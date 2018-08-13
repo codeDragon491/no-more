@@ -3,7 +3,7 @@
 This is an example of a super simple static webpage built with [Tailwind CSS](https://tailwindcss.com). It also required a very small amount of Javascript, so for that I used [Vue.js](https://vuejs.org). 
 Since the focus of the project is [Tailwind CSS](https://tailwindcss.com), I didn´t installed [Vue.js](https://vuejs.org) and I didn´t focus on [Vue.js](https://vuejs.org) file/folder structure. I used the CDN version of it for a quick try out.
 
-In order to easily use [Tailwind CSS] I have setted up Webpack Starter.
+In order to easily use [Tailwind CSS](https://tailwindcss.com) I have setted up Webpack Starter.
 
 To get started, clone the project and install the dependencies:
 
